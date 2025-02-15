@@ -21,7 +21,7 @@
         let unregister = await sw.pushManager.unregister(pushSubscription);
 */
         let push = await sw.pushManager.subscribe({
-          userVisibleOnly: true,
+          userVisibleOnly: false,
           applicationServerKey:
             'BK0qH443Cl13IWTyo8jc6DCVm27hC1pnF9ltM_AnDsF_1CQepY8dQnfssbOBwC9ryt_LV34yv-bL25AjRUnFO6c'
         });
