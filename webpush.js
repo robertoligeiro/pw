@@ -1,10 +1,10 @@
 const webpush = require('web-push');
 
-let vapidKeys = webpush.generateVAPIDKeys();
-console.log(vapidKeys);
+//let vapidKeys = webpush.generateVAPIDKeys();
+//console.log(vapidKeys);
 
 // VAPID keys should only be generated only once.
-/*
+
 const vapidKeys = {
   publicKey: 'BK0qH443Cl13IWTyo8jc6DCVm27hC1pnF9ltM_AnDsF_1CQepY8dQnfssbOBwC9ryt_LV34yv-bL25AjRUnFO6c',
   privateKey: 'YhgL29VK_Mr3nxc6IjUsbGxx2Xx6pyEWiFtR-wkAfUY'
@@ -24,4 +24,3 @@ const pushSubscription = {
 };
 
 webpush.sendNotification(pushSubscription, 'Your Push Payload Text');
-*/
