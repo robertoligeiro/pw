@@ -10,8 +10,10 @@
     <button onclick="subscribe()">Subscribe</button>
 
     <script>
+      
       async function subscribe() {
         let sw = await navigator.serviceWorker.ready;
+        sw.pushManager.unsubscribe();
         let push = await sw.pushManager.subscribe({
           userVisibleOnly: true,
           applicationServerKey:
