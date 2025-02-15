@@ -2,12 +2,12 @@ const webpush = require('web-push');
 
 let vapidKeys = webpush.generateVAPIDKeys();
 console.log(vapidKeys);
-/*
+
 // VAPID keys should only be generated only once.
+/*
 const vapidKeys = {
-  publicKey:
-    'BBZY7Q3KEtZArAAWMLi_qzWHbH4vAoqPpIXnRhmlUaw0PVs1Kt_2fgLhuaVI5i8MWASBKx3d6W6UoH2U3qChw9U',
-  privateKey: 'CZtf_JUxmXkCKbzwaKedPPO9BFC99U2rk-GUYDbYAa8'
+  publicKey: 'BK0qH443Cl13IWTyo8jc6DCVm27hC1pnF9ltM_AnDsF_1CQepY8dQnfssbOBwC9ryt_LV34yv-bL25AjRUnFO6c',
+  privateKey: 'YhgL29VK_Mr3nxc6IjUsbGxx2Xx6pyEWiFtR-wkAfUY'
 };
 
 webpush.setVapidDetails(
@@ -18,11 +18,9 @@ webpush.setVapidDetails(
 
 // This is the same output of calling JSON.stringify on a PushSubscription
 const pushSubscription = {
-  endpoint: '.....',
-  keys: {
-    auth: '.....',
-    p256dh: '.....'
-  }
+"endpoint":"https://fcm.googleapis.com/fcm/send/euLjsuF3OXI:APA91bFJNEZR0JsYAcJRIs1xHTkVVAbHGWneWmHxLWcCHeuYxjPq5KS8mccUYbQAsqeu0PBYGLZ8YUT_dwL9R0JyfGUpCm4_FeFnm9IrRaDPsP0skxzhoB9EMHi0V7Eyir6Azy7VTa89",
+"expirationTime":null,
+"keys":{"p256dh":"BMnpTClrA-gmOTGRq4U5q6qrPMCZOtMrThdUNqIdOj-O2KVGfQnxV_Tvf6RvqAZmLd2nklvKW6I4Oz3HrRggVoE","auth":"MXXJXl82lWne_aoWzlhl2A"}
 };
 
 webpush.sendNotification(pushSubscription, 'Your Push Payload Text');
